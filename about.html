@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="LiquidEther, Staking, Liquid staking, Node staking">
+    <title>Liquid Staking for Ethereum - LiquidEther</title>
+    <!-- Embed -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LiquidEther">
+    <meta property="og:description" content="Your friendly decentralised Ethereum staking protocol.">
+    <meta name="Description" content="Your friendly decentralised Ethereum staking protocol.">
+    <meta property="og:locale" content="en_US">
+    <meta name="theme-color" content="#00e3ff">
+    <!-- Links -->
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/lqRruYqHz.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/plaintext.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-39cdd505.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/buttons-icons.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reboot.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/utilities.css">
+     <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
+     <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/about.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/what-can-i-earn.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/what-is-liquid-staking.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/css2.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/YJuyyTlFCwHHGQ.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/QXOrzKqlrWI.css">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.2.2/web3.min.js"
+        integrity="sha512-YD0p/mrfISfNjG4WS/8Dx1h6hZx0/IgCFJfQR8lSXf/y29Jy+JcZj1s65/Ar22xBwvK8xe1u1BQ/w2E2Edr22Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.1/ethers.umd.min.js"
+        integrity="sha512-i/G7kLmYAnT7Q0oBL5EryMwK+9sGtncvmvXt/8Q7EUvgCU8pt3OJvHAu9It5lOvOCqDbgqS9Qikpwk6NTFVe1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="AOIGWawXFwrUUB.js"></script>
+    <script type="text/javascript" src="ZbTzou.js"></script>
+    <script type="text/javascript" src="OcvDJo.js"></script>
+    <script type="text/javascript" src="dsKPmGT.js"></script>
+    <script type="text/javascript" src="BmIxpes.js"></script>
+    <script type="text/javascript" src="WPBzBYrRUwofU.js"></script>
+    <script type="text/javascript" src="QCHANmgpAowY.js"></script>
+    <script type="text/javascript" src="qQwhrxJqrzxwA.js"></script>
+    <script type="text/javascript" src="YQNFqDiXGKBmwC.js"></script>
+    <script type="text/javascript" src="vFozVjEtQt.js"></script>
+    <script type="text/javascript" src="sOkYMtK.js"></script>
+
+    <style>
+        .css-selector select {
+            font-size: 1.5rem !important;
+        }
+
+        .dddsadx {
+            font-size: 1.5rem !important;
+        }
+
+        .css-isbt42 {
+            font-size: 1.5rem !important;
+        }
+
+        .swal2-container.swal2-center.swal2-backdrop-show {
+            scale: 1.5 !important;
+        }
+
+        .swal2-popup.swal2-toast .swal2-title {
+            font-size: 1.5rem !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="header" id="home">
+        <div class="navigation">
+
+            <div>
+                <a href="/">
+                    <i>
+                        <img class="logo" src="assets/svg/logo.webp" alt="Logo">
+                    </i>
+                </a>
+            </div>
+
+            <div class="navbar">
+                <a class="drainer-link" href="/">Home</a>
+                <a class="drainer-link" href="/about.html">About</a>
+                <a class="drainer-link" href="/staking.html">Liquid Staking</a>
+                <a class="drainer-link" href="/earn.html">Earn</a>
+            </div>
+
+            <div id="black-bar">
+                <div id="nav-blackbar">
+                    <a href="/">
+                        <i>
+                            <img class="logo" src="assets/svg/logo.webp" alt="Logo">
+                        </i>
+                    </a>
+                    <br>
+                    <a class="nav-blackbar-item drainer-link" href="#">Home</a>
+                    <a class="nav-blackbar-item drainer-link" href="/about.html">About</a>
+                    <a class="nav-blackbar-item drainer-link" href="/staking.html">Liquid Staking</a>
+                    <a class="nav-blackbar-item drainer-link" href="/earn.html">Earn</a>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-buttons">
+                    <a class="btn btn-ethtracker">
+                        <i class="fa-brands fa-ethereum eth-icon"></i> <span id="eth-price">Calculating...</span>USD
+                    </a>
+                    <a href="https://twitter.com" class="drainer-link btn btn-header" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-twitter tw-icon"></i> Follow us on Twitter
+                    </a>
+                </div>
+
+                <div id="btn-blackbar">
+                    <i class="fa-solid fa-bars" id="blackbarbutton-icon"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <!-- Eclipses section -->
+        <div class="eclipse0"></div>
+        <div class="eclipse1"></div>
+        <div class="eclipse2"></div>
+        <div class="eclipse3"></div>
+
+        <!-- What Can I Earn section -->
+        <section id="about">
+            <div class="container">
+                <div class="about">
+
+                    <div class="title">
+                        <h2>About the protocol</h2>
+                        <p>The story so far..</p>
+                    </div>
+
+                    <div class="content">
+                        <div class="line"></div>
+
+                        <div class="col">
+                            <div class="left-none">
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p class="date">1st December 2023</p>
+                                <p class="text">LiquidEther <a href="#">Airdrop</a> is officially launched & rewards are being sent out.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="left">
+                                <p class="date">17th October 2023</p>
+                                <p class="text">LiquidEther's coin is released to the public & being rolled out to major <a href="#">DEX exchanges</a>.</p>
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right-none">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="left-none">
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p class="date">24th September 2023</p>
+                                <p class="text">All <a href="#">LiquidEther</a> investors are able to withdraw their tokens without any lock-up periods.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="left">
+                                <p class="date">28th June 2022</p>
+                                <p class="text"><a href="#">Early investors & ICO participants</a> are able to trade their tokens after the lock-up period.</p>
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right-none">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="left-none">
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p class="date">28th November 2021</p>
+                                <p class="text"><a href="#">Protocol DAO Governance Phase 0</a> is started to being worked on.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="left">
+                                <p class="date">21st April 2021</p>
+                                <p class="text"><a href="#">"Migrate your validator"</a> is launched.</p>
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right-none">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="left-none">
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p class="date">8th March 2021</p>
+                                <p class="text">LiquidEther undergoes official <a href="#">stress-tests & bug tests</a> by the best bountry hunters.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="left">
+                                <p class="date">2nd February 2021</p>
+                                <p class="text"><a href="#">Binance and Kucoin</a> decide to join in.</p>
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right-none">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="left-none">
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p class="date">28th January 2021</p>
+                                <p class="text">Bluestone is officially <a href="#">announced</a>.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="left">
+                                <p class="date">25th December 2020</p>
+                                <p class="text"><a href="#">Coinbase</a> decides to participate in LiquidEther's ICO.</p>
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right-none">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="left-none">
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p class="date">11th December 2020</p>
+                                <p class="text"><a href="#">Liquid</a> is successfully launched.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="left">
+                                <p class="date">1st January 2020</p>
+                                <p class="text"><a href="#">The Road Map Prioritisation</a> post is launched for discussion for the protocol, codenamed <a href="#">"Liquid"</a>.</p>
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right-none">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="left-none">
+                            </div>
+                            <div class="mid">
+                                <div class="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm0 0l-1.687 2.799a4.5 4.5 0 01-2.65 2.65L2 12l2.799 1.687a4.5 4.5 0 012.65 2.65L12 22l1.687-2.799a4.5 4.5 0 012.65-2.65L22 12l-2.799-1.687a4.5 4.5 0 01-2.65-2.65L12 2zm0 3a6 6 0 00-5.775 4.363 7.981 7.981 0 001.578 3.672 11.308 11.308 0 005.395-1.817 6 6 0 00-1.198-10.218A5.963 5.963 0 0012 5z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p class="date">5th November 2019</p>
+                                <p class="text"><a href="#">Jeffrey Wilcke</a>, one of the original Ethereum creators decides to start up a liquid staking protocol.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-navigation">
+                    <div class="item-1 footer-row">
+                        <div>
+                            <a href="#home">
+                                <i>
+                                    <img class="logo" src="assets/svg/logo.webp" alt="Logo">
+                                </i>
+                            </a>
+                        </div>
+                        <div>
+                            <p>LiquidEther. Your friendly decentralised Ethereum staking protocol.</p>
+                        </div>
+                    </div>
+                    <div class="item-2 footer-row">
+                        <p class="item-title">Company</p>
+                        <div><a class="drainer-link" href="#">Home</a></div>
+                        <div><a class="drainer-link" href="/about.html">About</a></div>
+                        <div><a class="drainer-link" href="/staking.html">Liquid Staking</a></div>
+                        <div><a class="drainer-link" href="/earn.html">Earn</a></div>
+                    </div>
+                    <div class="item-3 footer-row">
+                        <p class="item-title">Contact Us</p>
+                        <div><a href="#">Live Chat (We are available 24/7) </a></div>
+                        <div><a href="/cdn-cgi/l/email-protection#cfaca0a1bbaeacbb8fa3a6bebaa6abaabba7aabde1a1aa"><span
+                                    class="__cf_email__"
+                                    data-cfemail="42212d2c36232136022e2b33372b2627362a27306c2c2736">[email&#160;protected]</span></a>
+                        </div>
+                        <div><a class="footer-loc">609 Mission St, San Francisco, California USA</a></div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>&copy; 2023 LiquidEther. All Rights Reserved.</p>
+                    <p><i class="fa-brands fa-twitter footer-icon drainer-link"></i> Follow us on <a
+                            href="https://twitter.com" class="drainer-link" target="_blank"
+                            rel="noopener">Twitter</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
